@@ -6,7 +6,7 @@
 
 ![App gif](./weather_app.gif)
 
-![Live demo](https://weather-app-xi-coral.vercel.app/)
+[Live demo](https://weather-app-xi-coral.vercel.app/)
 
 ## Built with
 
