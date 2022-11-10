@@ -6,10 +6,13 @@
 
 ![App gif](./weather_app.gif)
 
+![Live demo](https://weather-app-xi-coral.vercel.app/)
+
 ## Built with
 
 - React
 - SCSS
+- [CoreUi](https://coreui.io/)
 
 ## To Add
 
