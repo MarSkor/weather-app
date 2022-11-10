@@ -1,0 +1,95 @@
+
+.next-hours-list{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 100%;
+ }
+
+ .next-days-list{
+    padding-top: 12px;
+ }
+
+ .card, .daycard{
+    background: rgba(32, 32, 91, 0.29);
+    backdrop-filter: blur(1.4px);
+    -webkit-backdrop-filter: blur(1.4px);
+    border-radius: 8px;
+
+ }
+ 
+ .card{
+    padding: 12px;
+    text-align: center;
+    &__time, p{
+        color: var(--color-indigo-light-100);
+    }
+
+    &__milm{
+        font-size: 16px;
+    }
+
+    &__body{
+        display: flex;
+        flex-direction: column;
+
+        h3{
+            color: var(--color-indigo-lightest);
+            font-size: 18px;
+        }
+    }
+
+    &__icon{
+        padding: 5px 0;
+    }
+
+
+    &__align-items{
+        display: flex;
+        justify-content: space-between;
+    }
+ }
+
+
+ .align-icon{
+    @include displayFlex;
+ }
+.weather-info-icon{
+    margin-right: 2px;
+}
+
+.daycard-wrap{
+    padding-bottom: 8px;
+}
+
+.daycard{
+    text-align: center;
+    padding: 8px;
+    p{
+        font-size: 17px;
+    }
+    &__info{
+        h3{
+            color: var(--color-indigo-lightest);
+            font-size: 18px;
+            padding-bottom: 2px;
+        }
+        h4{
+            text-transform: capitalize;
+            font-size: 14px;
+        }
+    }
+    .center-content{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .color-low-c{
+        color: var(--color-indigo-light-100);
+    }
+}
+
+
+
