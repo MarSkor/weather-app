@@ -1,6 +1,6 @@
 ![Logo](./Logo.svg)
 
-#WeatherReport. ☀️
+# WeatherReport. ☀️
 
 > A weather app developed using React and the [openweathermap](https://openweathermap.org/) API.
 
