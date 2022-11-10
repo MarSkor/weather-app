@@ -9,10 +9,7 @@ import { SiRainmeter, SiSnowflake} from "react-icons/si";
 const WeatherNextDays = (props) => {
   let [loaded, setLoaded] = useState(false);
   const [weatherNextDays, setWeatherNextDays] = useState([]);
-  const [alert, setAlert] = useState([]);
   const [isError, setIsError] = useState(null);
-
-
 
   const baseUrl = "https://api.openweathermap.org/data/2.5/"
   const apiKey = process.env.REACT_APP_API_KEY;
@@ -33,8 +30,6 @@ const WeatherNextDays = (props) => {
       if(res.ok){
         const data = await res.json(); 
         setWeatherNextDays(data.daily)
-        setAlert(data.alerts)
-      //  console.log("weather daily", weatherNextDays) 
       }
       if(res.status === 404){
         setIsError("Location not found.")

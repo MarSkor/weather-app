@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import {  WeatherInfo, WeatherNextDays, WeatherNextHours } from '../components';
+import {  WeatherInfo, WeatherNextDays, WeatherNextHours, Error } from '../components';
 import { CRow, CCol, CAlert } from '@coreui/react';
-import { convertTimeStamp, convertTimeStampToFullDay } from '../utils/functions';
+import { convertTimeStampToFullDay } from '../utils/functions';
 
 const WeatherDashboard = ({weatherData}) => {
     let [loaded, setLoaded] = useState(false);
@@ -51,6 +51,7 @@ const WeatherDashboard = ({weatherData}) => {
 
 
         <CCol sm={{ span: true, order: -1 }} md={7} lg={8} >
+            
             <section className='weather__dashboard-right dashboard-card'>
                 {weatherData ? (
                     <>
@@ -74,15 +75,22 @@ const WeatherDashboard = ({weatherData}) => {
         </CCol>
         {alerts && alerts.map((alert, index) => {
             return(
-                <CAlert key={index} color="danger" variant="solid" className='alert-wrap'>
-                    <h3>{alert.event}</h3>
-                    <h4>{alert.description}</h4>
-                    <h4>Starts: {convertTimeStampToFullDay(alert.start)}</h4>
-                    <h4>Ends: {convertTimeStampToFullDay(alert.end)}</h4>
-                    <p>From {alert.sender_name}</p>
-                </CAlert>
+                <div className="alert-container">
+                    <CAlert key={index} color="danger" variant="solid" className='alert-wrap'>
+                        <h3>{alert.event}</h3>
+                        <h4>{alert.description}</h4>
+                        <h5>Starts: {convertTimeStampToFullDay(alert.start)}</h5>
+                        <h5>Ends: {convertTimeStampToFullDay(alert.end)}</h5>
+                        <p>From {alert.sender_name}</p>
+                    </CAlert>
+                </div>
             )
         })}
+        {isError ? (
+              <div className="error-weather">
+                <Error message={isError}/>
+              </div>
+            ): ("")}
      </CRow>
 
   )

@@ -11,7 +11,7 @@
 - React
 - SCSS
 
-## To do
+## To Add
 
 - Add option to get weather on current location with geolocation.
 - Refactor SCSS

@@ -188,6 +188,39 @@
 }
 
 
+
+
+.alert-container{
+    width: 250px;
+    // background-color: red;
+}
+
 .alert-wrap{
-    max-width: 400px;
+
+  
+    h3, h4{
+        color: var(--color-indigo-lightest);
+    }
+
+    h3{
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    h4{
+        text-transform: capitalize;
+        font-size: 18px;
+    }
+
+    h5, p{
+        color: var(--color-indigo-light-100);
+    }
+
+    h5{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    p{
+        font-size: 14px;
+    }
 }

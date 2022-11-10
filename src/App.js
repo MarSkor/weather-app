@@ -1,6 +1,6 @@
 import './styles/main.scss';
 import Weather from './container/Weather';
-import { Navbar } from './components';
+import { Navbar, Footer } from './components';
 
 function App() {
 
