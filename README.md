@@ -19,7 +19,6 @@
 - Add option to get weather on current location with geolocation.
 - Refactor SCSS
 - Toggle between °C and °F
+- Dropdown/Auto search
 
-## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
