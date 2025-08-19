@@ -1,3 +1,5 @@
+X Currently not working. Need to update the openweathermap API to 3.0 (2.5 is deprecated)
+
 ![Logo](./Logo.svg)
 
 # WeatherReport. ☀️
